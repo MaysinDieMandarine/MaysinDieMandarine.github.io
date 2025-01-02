@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Rezepte</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table.rezepte, th, td {
+            border:1px solid rgb(140, 143, 151);
+        }
+        .anleitung {
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .caption{
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anleitung</h1>
+    <table class="rezepte">
+        <tbody>
+            <tr>
+            <td></td>
+            <td>Haus</td>
+            <td>Straße</td>
+            <td>Schule</td>
+            <td>Asphalt</td>
+            <td>Draht</td>
+            <td>Rathaus</td>
+            </tr>
+            <tr>
+            <td>Holz</td>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td></td>
+            <td>1</td>
+            </tr>
+            <tr>
+            <td>Stein</td>
+            <td>2</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1</td>
+            <td></td>
+            <td>2</td>
+            </tr>
+            <tr>
+            <td>Eisen</td>
+            <td>1</td>
+            <td></td>
+            <td>2</td>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            </tr>
+            <tr>
+            <td>Gold</td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td></td>
+            <td>x</td>
+            <td>1</td>
+            </tr>
+            <tr>
+            <td>Diamant</td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            </tr>
+            <tr>
+                <td colspan="7" style="text-align:center;">Nicht-Zutaten</td>
+            </tr>
+            <tr><td>Siegpunkte</td>
+            <td>2</td>
+            <td>1</td>
+            <td>8</td>
+            <td>0</td>
+            <td>0</td>
+            <td>10</td>
+            </tr>
+            <tr>
+                <td>Geld*</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="font-size:10px">*pro gespielter Zug, das heißt, wenn du am Zug bist, bekommst du das Geld, z. B. so: Du hast ein Rathaus und ein Haus. Wenn du am Zug bist, bekommst du 1$ + 5$ = 6$</p>
+    <p class="caption">Tabelle 1</p>
+    <br><br><br><br>
+    <div id="anleitung">
+        Es wird mit 2-5 Spielern gespielt. Bei 5 Spielern ist einer der <i>Superior</i>, eine Art Präsident. Dieser hat folgende Aufgaben:
+        <ul>
+            <li>Abbaulizenzen verteilen <br>
+                <ul>
+                    Mit Abbaulizenzen kann man spezielle Rohstoffe abbauen. Diese sind:
+                    <li>Eisen(3$)</li>
+                    <li>Gold(6$)</li>
+                    <li>Diamant(10$)</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Steuern verlangen; Jedes Mal, wenn ein Spieler in der Stadt des Superior(des Präsidenten) ankommt,  gibt er dem Superior Steuern ab.
+                <table class="rezepte">
+                    <tbody>
+                        <tr>
+                        <td>&lt;5</td>
+                        <td>5-10$</td>
+                        <td>10-20$</td>
+                        <td>20$-35$</td>
+                        <td>35$-50$</td>
+                        <td>50$-65$</td>
+                        <td>&gt;65</td>
+                        </tr>
+                        <tr>
+                            <td>1$</td>
+                            <td>2$</td>
+                            <td>3$</td>
+                            <td>5$</td>
+                            <td>6$</td>
+                            <td>7$</td>
+                            <td>8$</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="caption">Tabelle 2</p>
+                Der Superior kann auch Rohstoffe statt Geld verlangen.
+            </li>
+            <br>
+            <li>Bauen(wie alle anderen)<p>Der Superior baut normal wie alle anderen, aber ist dabei auf Steuern und Spenden angewiesen.</p></li>
+        </ul>
+        <h2>Spielzug</h2>
+        <ol>
+            <li>Würfeln und die entsprechende Anzahl Schritte gehen(hin oder zurück). Wenn man aus seiner Stadt kommt, muss man in Richtung Hauptstadt, sonst in die eigene Stadt.</li>
+            <li>1-2 Aktionen ausführen. Diese sind:
+                <ul>
+                    <li>Bauen</li>
+                    <li>Spenden</li>
+                    <li>Handeln</li>
+                    <li>Wenn man in der Hauptstadt ist:<ul>
+                        <li>Steuern zahlen(muss man machen, wenn man in der Hauptstadt ankommt)</li>
+                        <li>Abbaulizenzen erhalten(gegen Gebühr)</li>
+                </ul>
+            </li>
+        </li>
+        <li>Siegpunkte erhalten, wenn man etwas gebaut hat, siehe Tabelle 1.</li>
+        </ol>
+        <p><b>Wenn alle Ressourcen aufgebraucht sind, hat derjenige oder diejenige mit dem meisten Geld gewonnen.</b></p>
+    </div>
+</body>
+</html>
