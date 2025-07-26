@@ -1,9 +1,8 @@
 .font-style-md
 {
-	/* a - Style */
 	font-family:arial, monospace, terminal;
 }
-.font-style-jm
+h1
 {
 	font-size: 72pt;
 	font-family: jokerman, monospace, terminal;
