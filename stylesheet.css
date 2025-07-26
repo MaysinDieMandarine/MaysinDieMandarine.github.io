@@ -29,5 +29,16 @@ p
 }
 nav
 {
-	background-color: #1111EEFE
+	background-color: #1111EEFE;
+}
+.popover
+{
+	background-color: #FF0000;
+	color: #FFFFFF;
+	font-family: arial, monospace, terminal;
+	border: 1px solid #000000;
+	padding: 10px;
+	position: absolute;
+	z-index: 1000;
+	display: none; /* Initially hidden */
 }
