@@ -38,7 +38,7 @@ nav
 	font-family: arial, monospace, terminal;
 	border: 1px solid #000000;
 	padding: 10px;
-	position: absolute;
+	align-items: start;
 	z-index: 1000;
 	display: none; /* Initially hidden */
 }
